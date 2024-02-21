@@ -1,12 +1,15 @@
 # Recommendation-Systems
 Recommendation system projects based on MIT Data Science course. For both projects, the exploration of the following algorithms is done:
-- ** Rank-based
+- ## Rank-based
   
 Rank-based recommendation systems are designed to suggest items to users based on some form of ranking metric. These systems can be simple but effective, especially in scenarios where personalized recommendations are not necessary or when there is insufficient data to build user-specific profiles. Here's an overview of how rank-based recommendation systems work and their key characteristics:
 
-*** Popularity: Items are ranked based on their popularity, measured through metrics such as sales numbers, views, or user ratings. The assumption is that items liked by many users are likely to be appreciated by a new user.
-*** Trending Items: Items that are currently trending or gaining rapid popularity are recommended. This can be particularly effective for content that is time-sensitive, like news articles or fashion.
-*** Highest Rated: Items are ranked based on their average ratings or reviews. This approach assumes that higher-quality items will be universally appreciated.
+### Popularity: 
+Items are ranked based on their popularity, measured through metrics such as sales numbers, views, or user ratings. The assumption is that items liked by many users are likely to be appreciated by a new user.
+### Trending Items: 
+Items that are currently trending or gaining rapid popularity are recommended. This can be particularly effective for content that is time-sensitive, like news articles or fashion.
+### Highest Rated: 
+Items are ranked based on their average ratings or reviews. This approach assumes that higher-quality items will be universally appreciated.
 
 These systems are straightforward to implement and understand. They don't require complex algorithms or user data to start making recommendations. 
 Recommendations based on general popularity can appeal to a wide audience, making them suitable for public spaces or general-interest platforms.
