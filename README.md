@@ -1,5 +1,5 @@
 # Recommendation-Systems
-This folder contains two Jupyter Notebooks for Recommendation System projects based on MIT/ Great Learning Data Science course: Amazon Product Recommendation System and Book Review Recommentation System. For both projects, the exploration of the following algorithms is done:
+This folder contains two Jupyter Notebooks for Recommendation System projects based on MIT/ Great Learning Data Science course: Amazon Product Recommendation System and Book Review Recommentation System. For both of the projects, the following algorithms are explored:
 
 ## 1. Rank-based
   
