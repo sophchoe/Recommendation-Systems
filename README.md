@@ -74,24 +74,24 @@ These are the observations from the experiments:
 Book Recommendation Systems are used by the vast majority of E-commerce businesses such as Amazon, Barnes and Noble, Flipkart, Goodreads, and other online retailers to recommend books that customers may be tempted to buy based on their preferences. This feature can assist in increasing shopping value while reducing shopping time. Logical recommendations not only assist customers in making purchases but also increase total sales value.
 
 The **ratings** dataset contains the following attributes: 
-- user-Id: Unique ID for each user
-- ISBN: International Standard Book Number. Books are identified by their respective ISBN
-- Book-rating: Rating for each book expressed on a scale from 0-10
+- **user-Id**: Unique ID for each user
+- **ISBN**: International Standard Book Number. Books are identified by their respective ISBN
+- **Book-rating**: Rating for each book expressed on a scale from 0-10
 
 The **users** dataset contains the following attributes: 
-- user-Id: Unique ID for each user
-- Location: City, State, Country
-- Age: Age when known and NAN when unknown
+- **user-Id**: Unique ID for each user
+- **Location**: City, State, Country
+- **Age**: Age when known and NAN when unknown
 
 The **books** dataset contains the following attributes:
-- ISBN: International Standard Book Number
-- Book-title: Title of the book
-- Book-author: Name of the author
-- Year-of-Publication: Publication Year
-- Publisher: Name of the publisher of the book
-- Image-Url-S: Small image of the book (Amazon link)
-- Image-Url-M: Medium size image of the book (Amazon link)
-- Image-Url-L: Large size image of the book (Amazon link)
+- **ISBN**: International Standard Book Number
+- **Book-title**: Title of the book
+- **Book-author**: Name of the author
+- **Year-of-Publication**: Publication Year
+- **Publisher**: Name of the publisher of the book
+- **Image-Url-S**: Small image of the book (Amazon link)
+- **Image-Url-M**: Medium size image of the book (Amazon link)
+- **Image-Url-L**: Large size image of the book (Amazon link)
 
 In this case study, recommendation systems using four different algorithms are built: 
   - Rank-based using averages
