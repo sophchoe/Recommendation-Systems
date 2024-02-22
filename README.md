@@ -42,13 +42,11 @@ The process of decomposing the user-item matrix into two or more matrices that, 
 
 The advantages of Matrix Factorizartion are dimensionality reduction, sparsity handling, personalization, and scalability.
 
-## Amazon Product Recommendation System
+---------------------------------------------------------------------------------------
+## **Project 1:**           Amazon Product Recommendation System
+--------------------------------------------------------------------------------------- 
 
-The task is building a recommendation system to recommend electronics products to Amazon customers based on their previous ratings for other products. We have a collection of labeled data of Amazon reviews of products. The goal is to extract meaningful insights from the data and build a recommendation system that helps in recommending products to online consumers.
-
------------------------------
-## **Dataset:**
------------------------------
+For this project, the task is building a recommendation system to recommend electronics products to Amazon customers based on their previous ratings for other products. We have a collection of labeled data of Amazon reviews of products. The goal is to extract meaningful insights from the data and build a recommendation system that helps in recommending products to online consumers.
 
 The Amazon dataset contains the following attributes:
 
@@ -58,3 +56,7 @@ The Amazon dataset contains the following attributes:
 - **timestamp:** Time of the rating. We **will not use this column** to solve the current problem
 
 Exploratory Data Analysis
+
+---------------------------------------------------------------------------------------
+## **Project 2:**           Amazon Product Recommendation System
+--------------------------------------------------------------------------------------- 
