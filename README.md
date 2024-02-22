@@ -1,5 +1,5 @@
 # Recommendation-Systems
-Recommendation system projects based on MIT Data Science course. For both projects, the exploration of the following algorithms is done:
+This folder contains two Jupyter Notebooks for Recommendation System projects based on MIT/ Great Learning Data Science course: Amazon Product Recommendation System and Book Review Recommentation System. For both projects, the exploration of the following algorithms is done:
 
 ## 1. Rank-based
   
@@ -73,7 +73,7 @@ These are the observations from the experiments:
 
 
 ---------------------------------------------------------------------------------------
-## **Project 2:**           Amazon Product Recommendation System
+## **Project 2:**           Book Review Recommendation System
 --------------------------------------------------------------------------------------- 
 Book Recommendation Systems are used by the vast majority of E-commerce businesses such as Amazon, Barnes and Noble, Flipkart, Goodreads, and other online retailers to recommend books that customers may be tempted to buy based on their preferences. This feature can assist in increasing shopping value while reducing shopping time. Logical recommendations not only assist customers in making purchases but also increase total sales value.
 
