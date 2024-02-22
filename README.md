@@ -53,9 +53,20 @@ The Amazon dataset contains the following attributes:
 - **userId:** Every user identified with a unique id
 - **productId:** Every product identified with a unique id
 - **Rating:** The rating of the corresponding product by the corresponding user
-- **timestamp:** Time of the rating. We **will not use this column** to solve the current problem
 
-Exploratory Data Analysis
+In this case study, we built recommendation systems using four different algorithms:
+  - **Rank-based using averages**: This was done by finding the average rating per product.
+  - **User-user similarity-based collaborative filtering**: For a specific product, we can find potential customers to recommend the product by finding similar users to the user who have ranked the product high.
+  - **Item-item similarity-based collaborative filtering**: For a specific user, we can find potential products the user may be interested in purchasing by finding similar products to the one the user has ranked high.
+  - **Model-based (matrix factorization) collaborative filtering**: This is a user-item method using Singular Value Decomposition. It works by decomposing the user-item matrix into the product of two lower dimensionality rectangular matrices.
+
+These are the observations from the experiments:
+- Overall, the **optimized item-item method** has given the **best performance** in terms of the F1-Score (~0.869).
+- **Optimized Matrix Factorization has the lowest RMSE (0.8808)**.
+- **Optimized item-item filtering has the highest F1 score (0.869)**.
+
+
+
 
 ---------------------------------------------------------------------------------------
 ## **Project 2:**           Amazon Product Recommendation System
@@ -88,16 +99,5 @@ In this case study, recommendation systems using four different algorithms are b
   - Item-item similarity-based collaborative filtering
   - Model-based (matrix factorization) collaborative filtering
 
-- To demonstrate **"user-user similarity-based collaborative filtering", "item-item similarity-based collaborative filtering", and "model-based (matrix factorization) collaborative filtering"**, **surprise** library has been used. For these algorithms, **grid search cross-validation is used to find the optimal hyperparameters for the data**, and improve the performance of the model**.
-
-- **For performance evaluation** of these models, **precision@k and recall@k** are used. Using these two metrics, the F_1 score is calculated for each working model. 
-
-- Overall, the **optimized user-user similarity-based recommendation system** has given the **best performance** in terms of the F1-Score (~0.86)
-
-- Collaborative Filtering searches for neighbors based on similarity of books (example) preferences and recommend books that those neighbors read while Matrix factorization works by decomposing the user-item matrix into the product of two lower dimensionality rectangular matrices.
-
-- Matrix Factorization has lower RMSE (1.50) due to the reason that it assumes that both books and users are present in some low dimensional space describing their properties and recommend a book based on its proximity to the user in the latent space. Implying it accounts for latent factors as well.
-
-- We can try to further improve the performance of these models using hyperparameter tuning. 
-
-- We can also try to combine different recommendation techniques to build a more complex model like hybrid recommendation systems.
+Observations:
+- Matrix Factorization has lower RMSE (1.50) due to the reason that it assumes that both books and users are present in some low dimensional space describing their properties and recommend a book based on its proximity to the user in the latent space. 
