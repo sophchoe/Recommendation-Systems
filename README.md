@@ -38,9 +38,13 @@ A large matrix where rows represent users, columns represent items, and the entr
 #### Latent Features: 
 These are the underlying attributes or characteristics that both users and items possess, which explain why certain users prefer certain items. Matrix factorization aims to identify these latent features.
 #### Factorization: 
-The process of decomposing the user-item matrix into two or more matrices that, when multiplied back together, approximate the original matrix. There are different decomposition methods: Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), and Alternating Least Squares (ALS). The most common decomposition produces a user feature matrix and an item feature matrix.
+The process of decomposing the user-item matrix into two or more matrices that, when multiplied back together, approximate the original matrix. There are different decomposition methods: Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), and Alternating Least Squares (ALS). The most common decomposition produces a user feature matrix and an item feature matrix. The advantages of Matrix Factorizartion are dimensionality reduction, sparsity handling, personalization, and scalability.
 
-The advantages of Matrix Factorizartion are dimensionality reduction, sparsity handling, personalization, and scalability.
+For the two projects below, the following four algorithms are built for recommendation:
+  - Rank-based using averages
+  - User-user similarity-based collaborative filtering
+  - Item-item similarity-based collaborative filtering
+  - Model-based (matrix factorization) collaborative filtering
 
 ---------------------------------------------------------------------------------------
 ## **Project 1:**           Amazon Product Recommendation System
@@ -92,12 +96,6 @@ The **books** dataset contains the following attributes:
 - **Image-Url-S**: Small image of the book (Amazon link)
 - **Image-Url-M**: Medium size image of the book (Amazon link)
 - **Image-Url-L**: Large size image of the book (Amazon link)
-
-In this case study, recommendation systems using four different algorithms are built: 
-  - Rank-based using averages
-  - User-user similarity-based collaborative filtering
-  - Item-item similarity-based collaborative filtering
-  - Model-based (matrix factorization) collaborative filtering
 
 Observations:
 - Matrix Factorization has lower RMSE (1.50) due to the reason that it assumes that both books and users are present in some low dimensional space describing their properties and recommend a book based on its proximity to the user in the latent space. 
