@@ -60,3 +60,44 @@ Exploratory Data Analysis
 ---------------------------------------------------------------------------------------
 ## **Project 2:**           Amazon Product Recommendation System
 --------------------------------------------------------------------------------------- 
+Book Recommendation Systems are used by the vast majority of E-commerce businesses such as Amazon, Barnes and Noble, Flipkart, Goodreads, and other online retailers to recommend books that customers may be tempted to buy based on their preferences. This feature can assist in increasing shopping value while reducing shopping time. Logical recommendations not only assist customers in making purchases but also increase total sales value.
+
+The **ratings** dataset contains the following attributes: 
+- user-Id: Unique ID for each user
+- ISBN: International Standard Book Number. Books are identified by their respective ISBN
+- Book-rating: Rating for each book expressed on a scale from 0-10
+
+The **users** dataset contains the following attributes: 
+- user-Id: Unique ID for each user
+- Location: City, State, Country
+- Age: Age when known and NAN when unknown
+
+The **books** dataset contains the following attributes:
+- ISBN: International Standard Book Number
+- Book-title: Title of the book
+- Book-author: Name of the author
+- Year-of-Publication: Publication Year
+- Publisher: Name of the publisher of the book
+- Image-Url-S: Small image of the book (Amazon link)
+- Image-Url-M: Medium size image of the book (Amazon link)
+- Image-Url-L: Large size image of the book (Amazon link)
+
+In this case study, recommendation systems using four different algorithms are built: 
+  - Rank-based using averages
+  - User-user similarity-based collaborative filtering
+  - Item-item similarity-based collaborative filtering
+  - Model-based (matrix factorization) collaborative filtering
+
+- To demonstrate **"user-user similarity-based collaborative filtering", "item-item similarity-based collaborative filtering", and "model-based (matrix factorization) collaborative filtering"**, **surprise** library has been used. For these algorithms, **grid search cross-validation is used to find the optimal hyperparameters for the data**, and improve the performance of the model**.
+
+- **For performance evaluation** of these models, **precision@k and recall@k** are used. Using these two metrics, the F_1 score is calculated for each working model. 
+
+- Overall, the **optimized user-user similarity-based recommendation system** has given the **best performance** in terms of the F1-Score (~0.86)
+
+- Collaborative Filtering searches for neighbors based on similarity of books (example) preferences and recommend books that those neighbors read while Matrix factorization works by decomposing the user-item matrix into the product of two lower dimensionality rectangular matrices.
+
+- Matrix Factorization has lower RMSE (1.50) due to the reason that it assumes that both books and users are present in some low dimensional space describing their properties and recommend a book based on its proximity to the user in the latent space. Implying it accounts for latent factors as well.
+
+- We can try to further improve the performance of these models using hyperparameter tuning. 
+
+- We can also try to combine different recommendation techniques to build a more complex model like hybrid recommendation systems.
