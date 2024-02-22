@@ -38,7 +38,9 @@ A large matrix where rows represent users, columns represent items, and the entr
 #### Latent Features: 
 These are the underlying attributes or characteristics that both users and items possess, which explain why certain users prefer certain items. Matrix factorization aims to identify these latent features.
 #### Factorization: 
-The process of decomposing the user-item matrix into two or more matrices that, when multiplied back together, approximate the original matrix. The most common decomposition produces a user feature matrix and an item feature matrix.
+The process of decomposing the user-item matrix into two or more matrices that, when multiplied back together, approximate the original matrix. There are different decomposition methods: Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), and Alternating Least Squares (ALS). The most common decomposition produces a user feature matrix and an item feature matrix.
+
+The advantages of Matrix Factorizartion are dimensionality reduction, sparsity handling, personalization, and scalability.
 
 ## Amazon Product Recommendation System
 
